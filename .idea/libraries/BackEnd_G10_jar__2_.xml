@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="BackEnd_G10_jar (2)">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/FrontEnd_G10/out/artifacts/BackEnd_G10_jar" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <jarDirectory url="file://$PROJECT_DIR$/FrontEnd_G10/out/artifacts/BackEnd_G10_jar" recursive="false" />
+  </library>
+</component>

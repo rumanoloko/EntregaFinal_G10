@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="SecondWindow">
+  <grid id="27dc6" binding="panel1" layout-manager="GridLayoutManager" row-count="16" column-count="10" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="823" height="471"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <hspacer id="d1a50">
+        <constraints>
+          <grid row="1" column="3" row-span="10" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <component id="14e01" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Arial" size="20"/>
+          <text value="Peso(toneladas)"/>
+        </properties>
+      </component>
+      <component id="41d53" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="11" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Arial" size="20"/>
+          <text value="Empresa remitente"/>
+        </properties>
+      </component>
+      <component id="fbdef" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="12" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Arial" size="20"/>
+          <text value="Empresa receptora"/>
+        </properties>
+      </component>
+      <hspacer id="813a8">
+        <constraints>
+          <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <hspacer id="1cf2e">
+        <constraints>
+          <grid row="4" column="8" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <hspacer id="90249">
+        <constraints>
+          <grid row="4" column="9" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <component id="63093" class="javax.swing.JTextField" binding="textField2" default-binding="true">
+        <constraints>
+          <grid row="4" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <font name="Arial" size="20"/>
+        </properties>
+      </component>
+      <component id="2c64b" class="javax.swing.JTextField" binding="textField3" default-binding="true">
+        <constraints>
+          <grid row="11" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <font name="Arial" size="20"/>
+        </properties>
+      </component>
+      <component id="35544" class="javax.swing.JTextField" binding="textField4" default-binding="true">
+        <constraints>
+          <grid row="12" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <font name="Arial" size="20"/>
+        </properties>
+      </component>
+      <vspacer id="285fd">
+        <constraints>
+          <grid row="13" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+      <vspacer id="44c29">
+        <constraints>
+          <grid row="14" column="5" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+      <vspacer id="97388">
+        <constraints>
+          <grid row="0" column="5" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+      <component id="cd653" class="javax.swing.JTextArea" binding="textArea1" default-binding="true">
+        <constraints>
+          <grid row="7" column="2" row-span="2" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="50"/>
+          </grid>
+        </constraints>
+        <properties>
+          <font name="Arial" size="20"/>
+        </properties>
+      </component>
+      <component id="8681a" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Arial" size="20"/>
+          <text value="Número de identificación"/>
+        </properties>
+      </component>
+      <component id="68459" class="javax.swing.JTextField" binding="textField1" default-binding="true">
+        <constraints>
+          <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <font name="Arial" size="20"/>
+        </properties>
+      </component>
+      <vspacer id="774ce">
+        <constraints>
+          <grid row="9" column="2" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+      <vspacer id="b761e">
+        <constraints>
+          <grid row="15" column="5" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+      <component id="31dc8" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="3" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Arial" size="20"/>
+          <text value="País de procedencia"/>
+        </properties>
+      </component>
+      <component id="4d49b" class="javax.swing.JTextField" binding="textField5" default-binding="true">
+        <constraints>
+          <grid row="3" column="5" row-span="1" col-span="3" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <font name="Arial" size="20"/>
+        </properties>
+      </component>
+      <component id="9b022" class="javax.swing.JRadioButton" binding="a1RadioButton" default-binding="true">
+        <constraints>
+          <grid row="5" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Arial" size="20"/>
+          <text value="1"/>
+        </properties>
+      </component>
+      <component id="d8050" class="javax.swing.JRadioButton" binding="a2RadioButton" default-binding="true">
+        <constraints>
+          <grid row="5" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Arial" size="20"/>
+          <text value="2"/>
+        </properties>
+      </component>
+      <component id="3f1a2" class="javax.swing.JRadioButton" binding="a3RadioButton" default-binding="true">
+        <constraints>
+          <grid row="5" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Arial" size="20"/>
+          <text value="3"/>
+        </properties>
+      </component>
+      <component id="9b4ba" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="5" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Arial" size="20"/>
+          <text value="Prioridad"/>
+        </properties>
+      </component>
+      <component id="d4c36" class="javax.swing.JCheckBox" binding="inspeccionadoEnAduanasCheckBox" default-binding="true">
+        <constraints>
+          <grid row="8" column="4" row-span="1" col-span="4" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Arial" size="20"/>
+          <text value="Inspeccionado en aduanas"/>
+        </properties>
+      </component>
+      <component id="d77ff" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="7" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Arial" size="20"/>
+          <text value="Descripción del contenido"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>
