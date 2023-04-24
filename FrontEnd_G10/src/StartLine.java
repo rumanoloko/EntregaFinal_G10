@@ -9,7 +9,7 @@ public class StartLine {
         FileOutputStream fos = null;
         ObjectOutputStream salida = null;
         try {
-            fos = new FileOutputStream("C:\\Users\\Vlad\\OneDrive - Universidad de Castilla-La Mancha\\Escritorio\\EntregaFinal_G10\\FrontEnd_G10\\puerto.dat");
+            fos = new FileOutputStream("puerto.dat");
         } catch (FileNotFoundException e) {
             throw new RuntimeException(e);
         }
@@ -42,6 +42,8 @@ public class StartLine {
         } catch (ClassNotFoundException e) {
             throw new RuntimeException(e);
         }
+
+
 
 
     }

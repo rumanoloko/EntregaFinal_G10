@@ -6,10 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="e441ca6c-3a55-4134-bf5b-9b46b9223bb6" name="Changes" comment="trabajoFinal_G10">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd_G10/out/artifacts/BackEnd_G10_jar/BackEnd_G10.jar" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd_G10/out/artifacts/BackEnd_G10_jar/BackEnd_G10.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd_G10/puerto.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd_G10/src/FirstWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd_G10/src/FirstWindow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd_G10/src/SecondWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd_G10/src/SecondWindow.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FrontEnd_G10/src/StartLine.java" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd_G10/src/StartLine.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -108,7 +104,7 @@
       <workItem from="1681988942432" duration="1225000" />
       <workItem from="1682330442578" duration="149000" />
       <workItem from="1682331152533" duration="2010000" />
-      <workItem from="1682346272593" duration="872000" />
+      <workItem from="1682346272593" duration="1502000" />
     </task>
     <task id="LOCAL-00001" summary="trabajoFinal_G10">
       <created>1681066258514</created>
@@ -124,7 +120,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681240321148</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="trabajoFinal_G10">
+      <created>1682347535713</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1682347535713</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -135,7 +138,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
