@@ -5,7 +5,7 @@ import java.io.*;
 
 public class FirstWindow extends JFrame implements Serializable {
 
-
+    private boolean pulsado = false;
     private JPanel panel1;
     private JTextField textField2;
     private JTextField textField3;
@@ -34,7 +34,6 @@ public class FirstWindow extends JFrame implements Serializable {
     private JTextField textField7;
     private JTextField textfield;
     private Carguero c;
-    private boolean aduanas = false;
     FileInputStream fis = null;
     ObjectInputStream entrada = null;
     ObjectOutputStream salida = null;
@@ -131,12 +130,9 @@ public class FirstWindow extends JFrame implements Serializable {
         FileInputStream fis = null;
         ObjectInputStream entrada = null;
         ///////////Lectura///////////////
-        fis = new FileInputStream("C:\\Users\\Vlad\\OneDrive - Universidad de Castilla-La Mancha\\Escritorio\\EntregaFinal_G10\\FrontEnd_G10\\puerto.dat");
+        fis = new FileInputStream("puerto.dat");
         entrada = new ObjectInputStream(fis);
         c = (Carguero) entrada.readObject();
-        //System.out.println(c.toString());
-        //textArea2.setText(c.toString(0));
-
         /////////////Cierre//////////////
         fis.close();
         entrada.close();
@@ -146,7 +142,7 @@ public class FirstWindow extends JFrame implements Serializable {
         mostrarDatosContenedorButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                SecondWindow sw = new SecondWindow(c.mostrarContenedor(Integer.parseInt(textField6.getText())), aduanas);
+                SecondWindow sw = new SecondWindow(c.mostrarContenedor(Integer.parseInt(textField6.getText())));
             }
         });
         apilarButton.addActionListener(new ActionListener() {
@@ -170,11 +166,12 @@ public class FirstWindow extends JFrame implements Serializable {
                     if(a3RadioButton.isSelected())
                         x=3;
                     Contenedor cont = new Contenedor(Integer.parseInt(textField1.getText()),x,Double.parseDouble(textField2.getText()),
-                            (String)comboBox1.getSelectedItem(), textArea1.getText(), textField3.getText(), textField4.getText());
+                            (String)comboBox1.getSelectedItem(), textArea1.getText(),
+                            textField3.getText(), textField4.getText(),pulsado);
                     c.apilarContenedor(cont);
                     textArea2.setText(c.toString());
                     try {
-                        fos = new FileOutputStream("C:\\Users\\Vlad\\OneDrive - Universidad de Castilla-La Mancha\\Escritorio\\EntregaFinal_G10\\FrontEnd_G10\\puerto.dat");
+                        fos = new FileOutputStream("puerto.dat");
                     } catch (FileNotFoundException y) {
                         throw new RuntimeException(y);
                     }
@@ -210,7 +207,7 @@ public class FirstWindow extends JFrame implements Serializable {
                 c.desapilarContenedor(Integer.parseInt(textField5.getText()), Integer.parseInt(textfield.getText()));
                 textArea2.setText(c.toString());
                 try {
-                    fos = new FileOutputStream("C:\\Users\\Vlad\\OneDrive - Universidad de Castilla-La Mancha\\Escritorio\\EntregaFinal_G10\\FrontEnd_G10\\puerto.dat");
+                    fos = new FileOutputStream("puerto.dat");
                 } catch (FileNotFoundException y) {
                     throw new RuntimeException(y);
                 }
@@ -250,10 +247,10 @@ public class FirstWindow extends JFrame implements Serializable {
             public void actionPerformed(ActionEvent e) {
                 if (inspeccionadoEnAduanasCheckBox.isSelected()) {
                     JOptionPane.showMessageDialog(null, "Pulsaste el botón 'Inspeccionado en aduanas'.", "", JOptionPane.INFORMATION_MESSAGE);
-                    aduanas = true;
+                    pulsado=true;
                 } else {
                     JOptionPane.showMessageDialog(null, "Despulsaste el botón 'Inspeccionado en aduanas'.", "", JOptionPane.INFORMATION_MESSAGE);
-                    aduanas = false;
+                    pulsado=false;
                 }
             }
         });

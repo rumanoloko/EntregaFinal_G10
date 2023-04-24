@@ -22,7 +22,7 @@ public class SecondWindow extends JFrame{
 
 
 
-    public SecondWindow(Contenedor c, boolean aduanas){
+    public SecondWindow(Contenedor c){
 
         textField1.setText(String.valueOf(c.getItentificador()));
         textField2.setText(String.valueOf(c.getPeso()));
@@ -30,14 +30,16 @@ public class SecondWindow extends JFrame{
         textField3.setText(String.valueOf(c.getEmpresaEmisora()));
         textField4.setText(c.getEmpresaReceptora());
         textField5.setText(c.getPaísProcedencia());
-        if(aduanas)
-            inspeccionadoEnAduanasCheckBox.setSelected(true);
+
         if(c.getPrioridad()==1)
             a1RadioButton.setSelected(true);
         if(c.getPrioridad()==2)
             a2RadioButton.setSelected(true);
         if(c.getPrioridad()==3)
             a3RadioButton.setSelected(true);
+        if(c.getAduanas()){
+            inspeccionadoEnAduanasCheckBox.setSelected(true);
+        }
         setTitle("Gestión de contenedor");
         setContentPane(panel1);
         setBounds(470,410,1205,700);
@@ -98,21 +100,6 @@ public class SecondWindow extends JFrame{
             }
         });
 
-    }
-
-    public static void main1(String[] args) {
-        ObjectOutputStream salida = null;
-        FileOutputStream fos = null;
-        try {
-            fos = new FileOutputStream("personas.dat");
-        } catch (FileNotFoundException e) {
-            throw new RuntimeException(e);
-        }
-        try {
-            salida = new ObjectOutputStream(fos);
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
     }
 
 }

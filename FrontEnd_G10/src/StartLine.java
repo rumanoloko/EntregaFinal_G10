@@ -18,16 +18,12 @@ public class StartLine {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-
-
         Carguero c = new Carguero();
         try {
             salida.writeObject(c);
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-
-
         try {
             fos.close();
         } catch (IOException e) {
@@ -39,8 +35,6 @@ public class StartLine {
             throw new RuntimeException(e);
         }
         */
-
-
         try {
             FirstWindow fw = new FirstWindow();
         } catch (IOException e) {
